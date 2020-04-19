@@ -21,7 +21,7 @@ __all__ = [
 
 def ooc_cmd_roll(client, arg):
     """
-    Roll a die. The result is shown publicly.
+    Roll a dice. The result is shown publicly.
     Usage: /roll [max value] [rolls]
     """
     roll_max = 11037

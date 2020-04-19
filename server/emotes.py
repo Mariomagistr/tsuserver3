@@ -22,7 +22,7 @@ class Emotes:
         char_ini = ConfigParser(comment_prefixes=('#', ';', '//', '\\\\'),
                                 strict=False)
         try:
-            char_path = path.join(char_dir, self.name, 'char.ini')
+            char_path = path.join(char_dir, str(self.name), 'char.ini')
             with open(char_path) as f:
                 char_ini.read_file(f)
         except FileNotFoundError:
